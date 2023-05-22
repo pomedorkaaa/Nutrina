@@ -15,7 +15,7 @@
   font-family: unset;
 }
 :root {
-  --color-main: #015d4d;
+  --color-main: #186c31;
   /* --color-main: #005546; */
   --color-main-bright: #587063;
   /* --color-secondary: #819a95; */
@@ -487,9 +487,23 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   height: 100vh;
+  gap: 25px;
 }
 .card {
-  background-color: white;
+  background-color: whitesmoke;
+  color: black;
+  max-height: 80vh;
+  width: 100%;
+  border-radius: 15px;
+}
+.card img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: 0.25s;
+}
+.card img:hover{
+  filter: brightness(70%);
 }
 
 @media (min-width: 375px) {
