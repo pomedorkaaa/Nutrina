@@ -15,10 +15,12 @@
   font-family: unset;
 }
 :root {
-  --color-main: #23392c;
+  --color-main: #015d4d;
+  /* --color-main: #005546; */
   --color-main-bright: #587063;
-  --color-main-transparent: rgba(61, 86, 70, 0.6);
-  --color-secondary: #819a95;
+  /* --color-secondary: #819a95; */
+  --color-secondary: #d2d2d242;
+
   --btn-bg: #d4d2d0;
 }
 
@@ -47,15 +49,13 @@ h2 {
   /* margin: 80px 0; */
 }
 h3 {
-  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
   line-height: 74px;
-  color: var(--btn-bg);
+  color: black;
 }
 h4 {
-  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -109,14 +109,12 @@ nav {
 .nav-list li {
   text-align: center;
   flex-grow: 1;
-  font-family: "PT Serif";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
 }
 #logo {
-  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
   font-size: 35px;
@@ -173,10 +171,10 @@ nav {
 .block_one > strong {
   display: flex;
   gap: 20px;
-  font-family: "Ubuntu";
+
   font-style: normal;
   font-weight: 700;
-  font-size: 62px;
+  font-size: 56px;
   line-height: 71px;
   color: white;
 }
@@ -192,7 +190,6 @@ nav {
   color: var(--color-main);
   background-color: var(--btn-bg);
 
-  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -210,13 +207,11 @@ nav {
 }
 .block_two p,
 .block_five > .container > p {
-  font-family: "PT Serif";
   font-style: normal;
   font-weight: 700;
   font-size: 27px;
   line-height: 36px;
-  color: var(--btn-bg);
-  opacity: 0.3;
+  color: rgb(131, 131, 131);
 }
 .what_we_do {
   max-width: 100%;
@@ -240,7 +235,6 @@ nav {
   border: none;
   padding: 15px 25px;
 
-  font-family: "PT Serif";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -251,6 +245,7 @@ nav {
   width: 100%;
   position: relative;
   pointer-events: none;
+  /* overflow: hidden; */
 }
 .we_do_img > img {
   width: 100%;
@@ -258,6 +253,14 @@ nav {
 }
 .we_do_block:hover p {
   opacity: 100%;
+  width: 100%;
+  /* max-width: 100%; */
+}
+.we_do_block:hover .right {
+  padding-left: 15%;
+}
+.we_do_block:hover .left {
+  padding-right: 15%;
 }
 .we_do_block:hover img {
   filter: brightness(70%);
@@ -269,14 +272,13 @@ nav {
   /* background-color: var(--color-main-transparent); */
   background-color: var(--color-main);
 
-  font-family: "PT Serif";
   font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 25px;
   line-height: 40px;
   display: flex;
   align-items: center;
-  max-width: 85%;
+  width: 85%;
   padding: 20px 10px;
   opacity: 75%;
   transition: 0.5s;
@@ -297,7 +299,6 @@ nav {
   padding: 30px 0;
 }
 .block_three_txt > p {
-  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -307,7 +308,6 @@ nav {
 }
 .block_three_txt > p > b {
   font-size: 50px;
-  font-family: "PT Serif";
 }
 
 .block_four {
@@ -327,10 +327,9 @@ nav {
   text-align: center;
 }
 .achievement:not(:first-child) {
-  border-left: 1px solid var(--color-main-transparent);
+  border-left: 1px solid rgba(255, 255, 255, 0.394);
 }
 .achievement p {
-  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -366,12 +365,11 @@ nav {
   gap: 10px;
 }
 .question_txt p {
-  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
-  color: white;
+  color: rgb(131, 131, 131);
 }
 .question_header {
   text-transform: uppercase;
@@ -387,7 +385,6 @@ nav {
   background-size: cover;
 }
 .block-six p {
-  font-family: "PT Serif";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -398,6 +395,9 @@ nav {
 .block-seven {
   padding: 40px 0 80px 0;
   background-color: var(--color-main);
+}
+.block-seven h3 {
+  color: white;
 }
 .consultations {
   width: 100%;
@@ -416,10 +416,9 @@ nav {
   border-radius: 30px;
 }
 .consult-header {
-  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 46px;
   color: var(--color-main-bright);
   border-bottom: 1px solid var(--color-main);
@@ -428,16 +427,14 @@ nav {
   padding: 5px 0 15px 0;
 }
 .consult-info {
-  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 25px;
   color: var(--color-main);
   /* margin-bottom: 15%; */
 }
 .consult-price {
-  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -445,7 +442,6 @@ nav {
   text-align: center;
 }
 .consult-old-price {
-  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -454,7 +450,6 @@ nav {
   text-decoration: line-through;
 }
 .consult-register {
-  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
