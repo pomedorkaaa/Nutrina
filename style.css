@@ -251,6 +251,9 @@ nav {
   width: 100%;
   transition: 0.5s;
 }
+.we_do_block:hover {
+  cursor: pointer;
+}
 .we_do_block:hover p {
   opacity: 100%;
   width: 100%;
@@ -303,7 +306,7 @@ nav {
   font-weight: 400;
   font-size: 40px;
   line-height: 60px;
-  /* text-align: center; */
+  text-align: center;
   color: white;
 }
 .block_three_txt > p > b {
@@ -384,7 +387,9 @@ nav {
   background-image: url(./images/block_six_bg.png);
   background-size: cover;
 }
-.block-six p {
+
+.block-six p,
+.block-eight p {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -396,7 +401,20 @@ nav {
   padding: 40px 0 80px 0;
   background-color: var(--color-main);
 }
-.block-seven h3 {
+.block-eight {
+  padding: 50px 0;
+  background-image: url(./images/block_eight_bg.png);
+  background-size: cover;
+}
+.block-seven .container {
+  gap: 15px;
+}
+.block-seven h3,
+.block-nine h3 {
+  color: white;
+}
+.block-nine {
+  background-color: var(--color-main);
   color: white;
 }
 .consultations {
@@ -461,6 +479,17 @@ nav {
   padding: 20px 0;
   width: 80%;
   border-radius: 50px;
+}
+
+.card-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  height: 100vh;
+}
+.card {
+  background-color: white;
 }
 
 @media (min-width: 375px) {
