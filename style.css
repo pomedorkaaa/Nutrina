@@ -8,6 +8,10 @@
 
 :root {
   --color-main: #23392c;
+  --color-main-transparent: rgba(61, 86, 70, 0.6);
+  --color-secondary: #819a95;
+
+  --btn-bg: #d4d2d0;
 }
 
 header {
@@ -22,7 +26,6 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  gap: 80px;
 }
 h2 {
   color: #6c8167;
@@ -36,10 +39,21 @@ h2 {
   /* margin: 80px 0; */
 }
 h3 {
-  color: white;
-  text-transform: uppercase;
-  font-size: 26px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 74px;
+  color: var(--btn-bg);
+}
+h4 {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 69px;
   text-align: center;
+  color: white;
 }
 h5 {
   font-size: 16px;
@@ -69,7 +83,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 80px;
 }
 nav {
   width: 100%;
@@ -100,6 +113,15 @@ nav {
   font-weight: 700;
   font-size: 35px;
   line-height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  filter: brightness(200);
+}
+#logo img {
+  max-height: 60px;
 }
 .social {
   display: flex;
@@ -108,7 +130,7 @@ nav {
   gap: 10px;
   align-items: center;
   border-radius: 100px;
-  background-color: white;
+  background-color: var(--btn-bg);
 }
 .social button {
   border: none;
@@ -130,159 +152,220 @@ nav {
 
 .block_one {
   height: 750px;
-  position: relative;
-  /* overflow: hidden; */
-  width: 100vw;
-  /* background-size: cover; */
   background-size: cover;
-  /* background-position: 50% 0%; */
   display: flex;
-  justify-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px !important;
   align-items: center;
   font-weight: 700;
   font-size: 26px;
   background-image: url(./images/block_one_bg.png);
-  /* filter: blur(1px) brightness(0.5); */
 }
 
-.quote img {
-  filter: brightness(0.5);
-  z-index: -1;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  /* bottom: 50%; */
-  /* right: 50%; */
-}
-.block_one strong {
+.block_one > strong {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
   font-size: 62px;
   line-height: 71px;
-  color: #ffffff;
+  color: white;
 }
+
 .line {
   width: 200px;
   height: 4px;
   background-color: white;
 }
-
-.green {
-  color: #6c8167;
-  font-weight: 600;
-}
-
-.primary-button {
-  background-color: #8b9e83;
-  color: white;
-  font-size: 16px;
-  border: none;
-  font-weight: 700;
-  width: max-content;
-  padding: 20px 30px;
+.consultation {
+  width: 400px;
+  height: 80px;
+  color: var(--color-main);
+  background-color: var(--btn-bg);
   cursor: pointer;
-}
-.secondary-button {
-  background-color: #8b9e83;
-  color: white;
-  font-size: 14px;
-  border: none;
+
+  font-family: "Ubuntu";
+  font-style: normal;
   font-weight: 700;
-  width: max-content;
-  padding: 15px 20px;
-  cursor: pointer;
-}
-.wide-btn {
-  width: 100%;
+  font-size: 20px;
+  line-height: 23px;
+  border: none;
+  border-radius: 0px 50px;
 }
 
-.quote {
-  height: 800px;
-  position: relative;
-}
-.quote b {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  color: white;
-  font-size: 30px;
-  text-align: center;
-  font-weight: 600;
-  line-height: 1;
-}
-
-.consult-list {
-  display: grid;
-  width: 100%;
-  gap: 20px;
-}
-.consult {
-  /* min-height: 300px; */
-  background-color: #efefef;
-}
-.consult-img {
-  height: 150px;
-  overflow: hidden;
-}
-.consult-img img {
-  width: 100%;
-  object-fit: cover;
-}
-.consult-info {
+.block_two {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background-color: var(--color-secondary);
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 55px 45px;
 }
-
-.special-consult {
-  min-height: 600px;
-  background-color: #dbd7d3;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  gap: 40px;
+.block_two p,
+.block_five > .container > p {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 36px;
+  color: var(--btn-bg);
+  opacity: 0.3;
 }
-#specialist {
-  height: 250px;
-  border-radius: 50%;
-}
-#orange {
-  color: #dea31b;
-}
-#orange-btn {
-  background-color: #dea31b !important;
-}
-
-.special-consult-desc-short {
-  font-size: 20px;
-  font-weight: 500;
-}
-.special-consult p {
-  text-align: center;
-}
-
-.programs {
+.what_we_do {
+  max-width: 100%;
+  width: max-content;
+  margin-top: 40px;
   display: grid;
-  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 60px 20px;
 }
-
-.program {
-  background-color: #efefef;
-}
-.program-info {
+.we_do_block {
+  max-width: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  padding: 20px;
+  gap: 5px;
 }
-.program img {
+.we_do_block > button {
+  border-radius: 50px;
+  background-color: var(--btn-bg);
+  border: none;
+  padding: 15px 25px;
+  cursor: pointer;
+
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--color-main);
+}
+.we_do_img {
   width: 100%;
-  object-fit: cover;
+  position: relative;
+  pointer-events: none;
+}
+.we_do_img > img {
+  width: 100%;
+}
+.we_do_img > p {
+  bottom: 20%;
+  color: white;
+  position: absolute;
+  /* background-color: var(--color-main-transparent); */
+  background-color: var(--color-main);
+
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  max-width: 85%;
+  padding: 20px 10px;
+  opacity: 75%;
+}
+.left {
+  text-align: left;
+  left: 0;
+}
+.right {
+  text-align: right;
+  right: 0;
+}
+
+.block_three {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(./images/block_three_bg.png);
+  padding: 30px 0;
+}
+.block_three_txt > p {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  /* text-align: center; */
+  color: white;
+}
+.block_three_txt > p > b {
+  font-size: 50px;
+  font-family: "PT Serif";
+}
+
+.block_four {
+  padding: 30px 0;
+  background-color: var(--color-main);
+}
+.achievements {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.achievement {
+  padding: 0 10px;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.achievement:not(:first-child) {
+  border-left: 1px solid var(--color-main-transparent);
+}
+.achievement p {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 24px;
+  color: white;
+}
+
+.block_five {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+}
+.questions {
+  /* margin-top: 50px; */
+  padding: 50px 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.question {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.question img {
+  max-width: 50px;
+}
+.question_txt {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.question_txt p {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+}
+.question_header {
+  text-transform: uppercase;
+  color: var(--color-main) !important;
+}
+#questions_first {
+  border-bottom: 2px solid var(--btn-bg);
 }
 
 @media (min-width: 375px) {
