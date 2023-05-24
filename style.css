@@ -589,9 +589,14 @@ footer {
 
 .footer {
   display: grid;
+  gap: 80px;
   grid-template-columns: repeat(3, 1fr);
+  padding: 50px 0;
+  align-items: start;
 }
 .footer-item-header {
+  padding: 10px 0;
+  border-bottom: 2px solid white;
   font-style: normal;
   font-weight: 700;
   font-size: 35px;
@@ -599,7 +604,16 @@ footer {
   color: white;
 }
 .footer-item-txt {
+  margin-top: 10px;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-item-txt li {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 .footer-item-txt p {
   color: white;
@@ -607,6 +621,9 @@ footer {
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
+}
+.nav-footer ul {
+  gap: 16px;
 }
 
 @media (min-width: 375px) {
