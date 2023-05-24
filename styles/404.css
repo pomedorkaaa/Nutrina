@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-image: url(../images/block_one_bg.png);
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.579);
+  z-index: 1;
+}
+.fall {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15%;
+  position: relative;
+  z-index: 2;
+}
+h1 {
+  font-size: 72px;
+  line-height: 1.17;
+  color: white;
+  padding: 24px 0 24px 0;
+}
+p {
+  color: white;
+  font-size: 22px;
+  line-height: 1.55;
+  padding: 15px 0 30px 0;
+  text-align: center;
+}
+a {
+  background-color: whitesmoke;
+  font-size: 16px;
+  padding: 15px 60px;
+  border-radius: 7px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 697px) {
+  h1 {
+    font-size: 42px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .fall {
+    padding: 0 5%;
+  }
+  a {
+    padding: 15px 30px;
+  }
+}
