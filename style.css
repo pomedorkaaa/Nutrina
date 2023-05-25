@@ -17,11 +17,14 @@
 :root {
   --color-main: #186c31;
   /* --color-main: #005546; */
-  --color-main-bright: #587063;
+  --color-main-bright: #4a6251;
+  --color-main-dark: #125125;
   /* --color-secondary: #819a95; */
   --color-secondary: #d2d2d242;
 
   --btn-bg: #d4d2d0;
+
+  --shadow: rgba(0, 0, 0, 0.25);
 }
 
 header {
@@ -54,6 +57,7 @@ h3 {
   font-size: 64px;
   line-height: 74px;
   color: black;
+  text-align: center;
 }
 h4 {
   font-style: normal;
@@ -184,7 +188,7 @@ nav {
   height: 4px;
   background-color: white;
 }
-.consult-request {
+.btn-secondary {
   width: 400px;
   height: 80px;
   color: var(--color-main);
@@ -220,14 +224,17 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
-  gap: 4% 3%;
+  gap: 30px 20px;
 }
 .we_do_block {
-  max-width: 450px;
+  /* max-width: 450px; */
+
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
+  border-radius: 15px;
+  overflow: hidden;
 }
 .we_do_block > button {
   border-radius: 50px;
@@ -502,8 +509,87 @@ nav {
   border-top-right-radius: 15px;
   transition: 0.25s;
 }
-.card img:hover{
+.card img:hover {
   filter: brightness(70%);
+}
+
+.block-ten {
+  padding: 30px 0 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+.article {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  box-shadow: 0px 0px 20px var(--shadow);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.article img {
+  /* flex-grow: 1; */
+  width: 50%;
+}
+.block-ten > a > button {
+  font-size: 30px;
+  box-shadow: 0px 0px 10px var(--shadow);
+}
+.article-info {
+  /* flex-grow: 1; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+.article-info a {
+  width: 100%;
+}
+.article-header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+}
+.article-txt {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--color-main-bright);
+}
+
+.btn-more {
+  background-color: var(--color-main);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  border: none;
+  width: 100%;
+  padding: 15px 0;
+
+  text-align: center;
+  color: white;
+}
+
+footer {
+  background-color: var(--color-main-dark);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 @media (min-width: 375px) {
