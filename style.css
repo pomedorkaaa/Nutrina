@@ -592,7 +592,12 @@ footer {
   gap: 80px;
   grid-template-columns: repeat(3, 1fr);
   padding: 50px 0;
+  /* align-items: start; */
   align-items: start;
+}
+.footer > img {
+  align-self: center;
+  justify-self: center;
 }
 .footer-item-header {
   padding: 10px 0;
@@ -613,7 +618,10 @@ footer {
 .footer-item-txt li {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 10px;
+  height: 32px;
+  line-height: 1;
 }
 .footer-item-txt p {
   color: white;
@@ -623,7 +631,7 @@ footer {
   line-height: 23px;
 }
 .nav-footer ul {
-  gap: 16px;
+  /* gap: 16px; */
 }
 
 @media (min-width: 375px) {
