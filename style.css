@@ -25,9 +25,7 @@
   /* --color-main-dark: #125125; */
   /* --color-secondary: #819a95; */
   --color-secondary: #d2d2d242;
-
   --btn-bg: #d4d2d0;
-
   --shadow: rgba(0, 0, 0, 0.25);
 }
 
@@ -650,13 +648,14 @@ footer {
 #footer-bottom {
   height: 10px;
 }
-
-@media (max-width: 375px) {
-}
-
-@media (max-width: 390px) {
+@media (max-width: 1024px) {
 }
 @media (max-width: 768px) {
 }
-@media (max-width: 1024px) {
+@media (max-width: 425px) {
+}
+@media (max-width: 390px) {
+}
+@media (max-width: 375px) {
+
 }

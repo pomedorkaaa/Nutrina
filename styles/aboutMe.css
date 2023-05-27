@@ -15,7 +15,7 @@
   font-family: unset;
 }
 :root {
-  --color-main: #186c31;
+  --color-main: #3f5147;
   /* --color-main: #005546; */
   --color-main-bright: #587063;
   /* --color-secondary: #819a95; */
@@ -29,7 +29,8 @@ header {
   /* position: sticky; */
   top: 0;
   /* background-color: #587063; */
-  background-color: white;
+  background: linear-gradient(to top, #606f68, #435147);
+  /* background: linear-gradient(to top, #606f6853, white 30%); */
   /* background-color: var(--color-main); */
   z-index: 9999;
   color: black;
@@ -99,58 +100,26 @@ nav {
 #burger img {
   height: 100%;
 }
-.info {
-  padding: 25px 0px 45px;
-  gap: 35px;
-}
-.name {
-  font-size: 42px;
-}
-.text {
-  font-size: 24px;
-  color: gray;
-}
-.card-list {
-  width: 100%;
+.aboutMe {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr;
-  justify-items: center;
-  /* height: 100vh; */
-  height: 100%;
-  gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
 }
-.card {
-  background-color: whitesmoke;
-  color: black;
-  /* max-height: 80vh; */
-  width: 100%;
-  border-radius: 15px;
+.aboutMe2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
-.card img {
-  width: 100%;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  transition: 0.25s;
+.aboutMe3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
-.card img:hover {
-  filter: brightness(70%);
+
+img {
+  height: 800px;
 }
-.prodcard {
-  display: flex;
-  flex-direction: column;
-  padding: 15px 25px;
-  gap: 15px;
+.about {
+  padding: 15px;
 }
-h5 {
-  font-size: 22px;
-}
-button {
-  height: 35px;
-  box-shadow: 1px 2px 5px #587063;
-  background-color: #587063;
-  color: white;
-}
+
 .footer {
   padding: 25px 0px 15px;
 }
