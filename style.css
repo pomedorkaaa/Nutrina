@@ -15,10 +15,11 @@
   font-family: unset;
 }
 :root {
-  --color-main: #186c31;
+  --color-main: #3f5147;
   /* --color-main: #005546; */
   --color-main-bright: #4a6251;
-  --color-main-dark: #125125;
+  --color-main-dark: #3f5147;
+  /* --color-main-dark: #125125; */
   /* --color-secondary: #819a95; */
   --color-secondary: #d2d2d242;
 
@@ -32,7 +33,7 @@ header {
   /* max-width: 100%; */
   position: sticky;
   top: 0;
-  background-color: var(--color-main);
+  background: linear-gradient(180deg, #435147, #606f68);
   z-index: 9999;
   color: white;
 }
@@ -584,20 +585,20 @@ nav {
 }
 
 footer {
-  background-color: var(--color-main-dark);
+  background: linear-gradient(180deg, #606f68, #435147);
 }
 
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-
-@media (min-width: 375px) {
+@media (max-width: 1024px) {
 }
-
-@media (min-width: 390px) {
+@media (max-width: 768px) {
 }
-@media (min-width: 768px) {
+@media (max-width: 425px) {
 }
-@media (min-width: 1024px) {
+@media (max-width: 390px) {
+}
+@media (max-width: 375px) {
 }
