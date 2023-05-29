@@ -4,21 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/infoprod.css" />
+    <title>Консультации</title>
     <link rel="stylesheet" href="./style.css" />
-    <title>Инфо-продукты</title>
+    <link rel="stylesheet" href="./styles/consultations.css" />
   </head>
   <body>
     <header>
@@ -60,84 +48,72 @@
     </header>
     <main>
       <div class="container">
-        <div class="info">
-          <h3 class="name">Инфо-продукты</h3>
-          <!-- <p class="text">
-            Уникальные проекты с бессрочным доступом, среди которых вы можете
-            найти бесплатные продукты
-          </p> -->
+        <h3>Консультации</h3>
+        <div class="main-consult">
+          <div class="main-consultation">
+            <div class="main-consult-img">
+              <img src="./images/main-consult1.png" alt="" />
+            </div>
+            <p class="main-consult-header">Консультация нутрициолога</p>
+            <div class="price-and-button">
+              <p>8000 RUB</p>
+              <a href="#"><button>Подробнее</button></a>
+            </div>
+          </div>
+          <div class="main-consultation">
+            <div class="main-consult-img">
+              <img src="./images/main-consult2.png" alt="" />
+            </div>
+            <p class="main-consult-header">
+              Консультация “Педиатр + нутрициолог”
+            </p>
+            <div class="price-and-button">
+              <p>12000 RUB</p>
+              <a href="#"><button>Подробнее</button></a>
+            </div>
+          </div>
+          <div class="main-consultation">
+            <div class="main-consult-img">
+              <img src="./images/main-consult3.png" alt="" />
+            </div>
+            <p class="main-consult-header">Консультация педиатра</p>
+            <div class="price-and-button">
+              <p>8000 RUB</p>
+              <a href="#"><button>Подробнее</button></a>
+            </div>
+          </div>
         </div>
-        <div class="card-list">
-          <div class="card card-1">
-            <a href="#">
-              <img src="./images/card-1.png" alt="card 1" />
-            </a>
-            <div class="prodcard">
-              <h5>Название продукта</h5>
-              <p>краткое описание продукта, цена</p>
-              <a href="#">
-                <button class="btn-more">Купить</button>
-              </a>
+      </div>
+      <div class="block-seven">
+        <div class="container">
+          <h3>Консультации на месяц</h3>
+          <div class="consultations">
+            <div class="consultation">
+              <p class="consult-header">Разминка</p>
+              <p class="consult-info">
+                Сопровождение нутрициолога <br /><b>1 месяц (28 дней)</b>
+              </p>
+              <p class="consult-old-price"></p>
+              <p class="consult-price"><b>10 500 р.</b></p>
+              <button class="consult-register">Записаться</button>
             </div>
-          </div>
-          <div class="card card-2">
-            <a href="#">
-              <img src="./images/card-2.png" alt="card 2" />
-            </a>
-            <div class="prodcard">
-              <h5>Название продукта</h5>
-              <p>краткое описание продукта, цена</p>
-              <a href="#">
-                <button class="btn-more">Купить</button>
-              </a>
+            <div class="consultation">
+              <p class="consult-header">Ближе к цели</p>
+              <p class="consult-info">
+                Сопровождение нутрициолога <br /><b>2 месяца (56 дней)</b>
+              </p>
+              <p class="consult-old-price">21 00 р.</p>
+              <p class="consult-price">18 000 р.</p>
+              <button class="consult-register">Записаться</button>
             </div>
-          </div>
-          <div class="card card-3">
-            <a href="#">
-              <img src="./images/card-3.png" alt="card 3" />
-            </a>
-            <div class="prodcard">
-              <h5>Название продукта</h5>
-              <p>краткое описание продукта, цена</p>
-              <a href="#">
-                <button class="btn-more">Купить</button>
-              </a>
-            </div>
-          </div>
-          <div class="card card-4">
-            <a href="#">
-              <img src="./images/card-1.png" alt="card 4" />
-            </a>
-            <div class="prodcard">
-              <h5>Название продукта</h5>
-              <p>краткое описание продукта, цена</p>
-              <a href="#">
-                <button class="btn-more">Купить</button>
-              </a>
-            </div>
-          </div>
-          <div class="card card-5">
-            <a href="#">
-              <img src="./images/card-1.png" alt="card 5" />
-            </a>
-            <div class="prodcard">
-              <h5>Название продукта</h5>
-              <p>краткое описание продукта, цена</p>
-              <a href="#">
-                <button class="btn-more">Купить</button>
-              </a>
-            </div>
-          </div>
-          <div class="card card-6">
-            <a href="#">
-              <img src="./images/card-1.png" alt="card 6" />
-            </a>
-            <div class="prodcard">
-              <h5>Название продукта</h5>
-              <p>краткое описание продукта, цена</p>
-              <a href="#">
-                <button class="btn-more">Купить</button>
-              </a>
+            <div class="consultation">
+              <p class="consult-header">Ближе к цели</p>
+              <p class="consult-info">
+                Сопровождение нутрициолога <br /><b>3 месяца (84 дней)</b>
+              </p>
+              <p class="consult-old-price">31 500 р.</p>
+              <p class="consult-price">27 500 р.</p>
+              <button class="consult-register">Записаться</button>
             </div>
           </div>
         </div>
