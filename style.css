@@ -603,6 +603,7 @@ nav {
   text-align: center;
   color: white;
   transition: 0.8s;
+  cursor: pointer;
 }
 .btn-more:hover,
 .consult-register:hover {
