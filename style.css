@@ -203,7 +203,7 @@ nav {
   font-size: 22px;
   line-height: 23px;
   border: none;
-  border-radius: 0px 50px;
+  border-radius: 50px;
   transition: 0.5s;
 }
 .btn-secondary:hover {
@@ -599,7 +599,7 @@ nav {
   border: none;
   width: 100%;
   padding: 15px 0;
-
+  border-radius: 10px;
   text-align: center;
   color: white;
   transition: 0.8s;
@@ -617,11 +617,11 @@ footer {
 
 .footer {
   display: grid;
-  gap: 80px;
+  gap: 220px;
   grid-template-columns: repeat(3, 1fr);
   /* padding: 50px 0; */
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   /* align-items: start; */
   align-items: start;
 }
@@ -629,16 +629,17 @@ footer {
   align-self: center;
   pointer-events: none;
   justify-self: center;
+  width: 240px;
 }
 .footer-item-header {
   pointer-events: none;
 
-  padding: 10px 0;
+  /* padding: 10px 0; */
   border-bottom: 1px solid white;
   font-style: normal;
   font-weight: 700;
-  font-size: 35px;
-  line-height: 40px;
+  font-size: 20px;
+  /* line-height: 40px; */
   color: white;
 }
 .footer-item-txt {
@@ -646,7 +647,7 @@ footer {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 .footer-item-txt li > a {
   display: flex;
@@ -662,17 +663,17 @@ footer {
 }
 .footer-item-txt p {
   font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 15px;
   line-height: 23px;
 }
 .copyrights {
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #footer-bottom {
