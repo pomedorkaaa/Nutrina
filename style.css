@@ -417,6 +417,121 @@ nav {
   padding: 40px 0 80px 0;
   background: var(--color-main);
 }
+
+.block_one_consult {
+  height: 100%;
+  width: 100%;
+  /* height: 650px; */
+  /* display: flex; */
+  /* flex-direction: row !important; */
+  /* justify-content: center; */
+  gap: 100px !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  /* align-items: center; */
+  font-weight: 700;
+  font-size: 26px;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.container1 {
+  gap: 25px;
+  align-items: flex-start;
+}
+.container1 p {
+  text-align: start;
+}
+.p-1 {
+  font-weight: 500;
+}
+.p-2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.heading_consult {
+  font-size: 35px;
+  color: #606f68;
+}
+.heading_consult span {
+  color: black;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+h1,
+.consult-request {
+  align-self: flex-start;
+}
+.consult-request {
+  background-color: var(--color-main);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  border: none;
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.wrapper-block-one {
+  max-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.wrapper-block-one {
+  display: flex;
+  flex-direction: column;
+}
+.block_two_consult {
+  margin: 50px 0;
+}
+.wrapper-block-two > h5 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.consult_cards {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  gap: 50px;
+}
+.consult_card {
+  display: flex;
+}
+.consult_card > div {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.consult_card h5 {
+  font-size: 20px;
+}
+.consult_card p {
+  line-height: 25px;
+}
+.img-consult {
+  /* background-image: url(./images/lena.jpg);
+  height: 100%; */
+  width: 100%;
+  /* background-position: center; */
+  /* height: 100%; */
+  position: relative;
+}
+#img-consult {
+  /* height: 100%; */
+  width: 100%;
+  /* height: 100%; */
+}
 .block-eight {
   padding: 50px 0;
   background-image: url(./images/block_eight_bg.png);
@@ -620,8 +735,8 @@ footer {
   gap: 220px;
   grid-template-columns: repeat(3, 1fr);
   /* padding: 50px 0; */
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   /* align-items: start; */
   align-items: start;
 }
@@ -680,6 +795,22 @@ footer {
   height: 10px;
 }
 @media (max-width: 1024px) {
+  h3 {
+    font-size: 50px;
+  }
+  .block_three_txt > p {
+    font-size: 35px;
+  }
+  .block_three_txt > p > b {
+    font-size: 40px;
+  }
+  .block-six p,
+  .block-eight p {
+    font-size: 30px;
+  }
+  .consult-header {
+    font-size: 32px;
+  }
 }
 @media (max-width: 768px) {
 }
