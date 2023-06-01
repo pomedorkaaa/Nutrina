@@ -14,7 +14,9 @@ window.onload = function () {
           "f9wX-tKXzsMQbqYUx"
         )
         .then(
-          function () {},
+          function () {
+            console.log("SUCCESS!");
+          },
           function (error) {
             console.log("FAILED...", error);
           }
