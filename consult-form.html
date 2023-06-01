@@ -13,31 +13,44 @@
     />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./styles/consult-form.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      defer
+    ></script>
+    <script src="./consult-form.js" defer></script>
   </head>
   <body>
     <div class="form container">
-      <form class="form-inputs" action="">
+      <form id="consult-form" class="form-inputs" action="">
         <h3>Заявка на консультацию</h3>
 
         <label for="">Ваше имя</label>
-        <input placeholder="Имя" type="text" name="" id="" required />
+        <input placeholder="Имя" type="text" name="from_name" id="" required />
 
         <label for="">Телефон</label>
         <input
           placeholder="+ 373 (99) 99-99-99"
           type="tel"
-          name=""
+          name="phone"
           id=""
           required
         />
 
         <label for="">Email</label>
-        <input placeholder="Ваш e-mail" type="email" name="" id="" required />
+        <input
+          placeholder="Ваш e-mail"
+          type="email"
+          name="email"
+          id=""
+          required
+        />
 
         <label for="">Тип консультации</label>
         <input
           placeholder="Выберите вариант из списка"
           type="text"
+          name="text"
           class="consult-type"
           required
         />
@@ -46,7 +59,7 @@
         <input
           placeholder="Добавьте сообщение "
           type="text"
-          name=""
+          name="message"
           id=""
           class="consult-comment"
         />
