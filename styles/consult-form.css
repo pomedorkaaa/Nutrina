@@ -15,7 +15,7 @@
 }
 
 .form {
-  background-color: var(--btn-bg);
+  background-color: white;
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -89,5 +89,5 @@ input::placeholder {
 }
 #deco-img {
   z-index: 2;
-  width: 75%;
+  width: 100%;
 }
