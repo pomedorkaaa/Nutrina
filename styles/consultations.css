@@ -1,0 +1,131 @@
+/* :root {
+  --color-main: #435147;
+  --color-main-bright: #6f8776;
+  --gradient-header: linear-gradient(0deg, #606f68, #435147);
+  --gradient-footer: linear-gradient(180deg, #606f68, #435147);
+  --color-secondary: #d2d2d242;
+  --btn-bg: #d4d2d0;
+  --shadow: rgba(0, 0, 0, 0.25);
+} */
+
+.block-seven {
+  background-color: white;
+}
+h3 {
+  color: black !important;
+}
+h4 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 18px;
+}
+.consult {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.block-seven h3 {
+  font-size: 46px;
+}
+.main-consult {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.main-consultation img {
+  width: 100%;
+  /* background-color: red; */
+  box-shadow: 0px 0px 20px var(--shadow);
+  border-radius: 15px 15px 0 0;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.main-consultation img:hover {
+  filter: brightness(70%);
+}
+.main-consult-img {
+  max-height: 420px;
+  /* overflow: hidden; */
+}
+.main-consultation {
+  /* overflow: hidden; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.main-consult-header {
+  background-color: var(--color-main);
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 31px;
+  padding: 15px 25px;
+  border-radius: 0px 0px 15px 15px;
+  margin-bottom: -15px;
+  z-index: 2;
+  min-height: 92px;
+}
+
+main > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.price-and-button {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+}
+.price-and-button p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  flex: 1 1 auto;
+  /* flex-grow: 1; */
+  /* width: 50%; */
+  padding: 20px 5px;
+  text-align: center;
+  border-radius: 0px 0px 15px 15px;
+  background-color: var(--btn-bg);
+  border: none;
+  height: max-content;
+}
+.price-and-button a {
+  /* flex-grow: 1; */
+  flex: 1 1 auto;
+}
+.price-and-button button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  border: none;
+  color: white;
+  width: 100%;
+  /* flex-grow: 1; */
+  padding: 20px 5px;
+  text-align: center;
+  border-radius: 0px 0px 15px 15px;
+  background-color: var(--color-main-bright);
+  transition: 0.5s;
+}
+.price-and-button button:hover {
+  line-height: 60px;
+}
+
+.consultation {
+  box-shadow: 0px 0px 20px var(--shadow);
+}

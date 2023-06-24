@@ -9,6 +9,7 @@
       content="Узнайте о преимуществах нутрициологии и как она может помочь вам достичь здоровья и хорошего самочувствия. Консультируйтесь с опытным нутрициологом и получайте рекомендации по питанию, поддерживающему вашу цель. Разберитесь, как правильное питание может повлиять на вашу энергию, вес, пищевые привычки и общее благополучие."
     />
 
+    <link rel="stylesheet" href="./styles/infoprod.css" />
     <link rel="stylesheet" href="./style.css" />
     <title>Нутрициология</title>
     <script src="./script.js" defer></script>
@@ -19,12 +20,6 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <header>
@@ -32,13 +27,17 @@
       <div class="header container">
         <nav class="navigation">
           <ul class="nav-list">
-            <li><a href=""> Специалисты</a></li>
-            <li><a href=""> Инфо-продукты</a></li>
+            <li><a href="./aboutMe.html"> О себе</a></li>
+            <li>
+              <a href="./infoprod.html" target="_parent"> Инфо-продукты</a>
+            </li>
             <li id="logo">
-              <a href=""> <img src="./logo/Logo.svg" alt="logo" /></a>
+              <a href="./index.html" target="_parent">
+                <img src="./logo/Logo.svg" alt="logo"
+              /></a>
             </li>
             <li><a href="./articles.html" target="_parent"> Статьи</a></li>
-            <li><a href=""> Консультации</a></li>
+            <li><a href="./consultations.html"> Консультации</a></li>
           </ul>
           <!-- <div class="social">
             <button>
@@ -62,11 +61,16 @@
     </header>
     <main>
       <div class="block_one">
-        <strong class="container"
-          >ОНЛАЙН-консультации по питанию и улучшению состояния здоровья
+        <strong class="container">
+           <!-- Онлайн-консультации по питанию и улучшению состояния здоровья -->
+           ЧУМАКОВА ЕЛЕНА
+дипломированный нутрициолог и коуч по питанию и здровому образу жизни
+<!-- ДИПЛОМИРОВАННЫЙ НУТРИЦИОЛОГ
+КОУЧ ПО ПИТАНИЮ И ЗДОРОВОМУ ОБРАЗУ ЖИЗНИ -->
+
           <div class="line"></div>
         </strong>
-        <a href=""
+        <a href="./consult-form.html"
           ><button class="btn-secondary">Заявка на консультацию</button></a
         >
       </div>
@@ -145,29 +149,37 @@
       <div class="block_five">
         <div class="container">
           <h3>С какими вопросами</h3>
-          <p>помогают наши специалисты</p>
+          <p>я помогу вам разобраться</p>
           <div class="questions" id="questions_first">
             <div class="question">
               <img src="./images/question1.svg" alt="question1" />
               <div class="question_txt">
                 <p class="question_header">
-                  ВНЕДРЕНИЕ ЗДОРОВЫХ ПИЩЕВЫХ ПРИВЫЧЕК
+                  Работа с ЖКТ
                 </p>
-                <p>Составить правила питания</p>
+                <p>СИБР, ГЭРБ, СРК, желчеотток и т.д.</p>
               </div>
             </div>
             <div class="question">
+              <img src="./images/question6.svg" alt="question6" />
+              <div class="question_txt">
+                <p class="question_header">Дисфункции щитовидной железы </p>
+                <p>гипотериоз, АИТ и.т.д.</p>
+              </div>
+            </div>
+            
+            <div class="question">
               <img src="./images/question2.svg" alt="question3" />
               <div class="question_txt">
-                <p class="question_header">ПИТАНИЕ ВО ВРЕМЯ БЕРЕМЕННОСТИ</p>
-                <p>Пособие для матерей</p>
+                <p class="question_header">Подготовка к беременности</p>
+                <p>восстановление организма после родов </p>
               </div>
             </div>
             <div class="question">
               <img src="./images/question3.svg" alt="question3" />
               <div class="question_txt">
-                <p class="question_header">ПОХУДЕНИЕ ИЛИ НАБОР ВЕСА</p>
-                <p>Поддержание мышечной массы</p>
+                <p class="question_header">Метаболический синдром</p>
+                <p>инсулинорезистентность, коррекция веса </p>
               </div>
             </div>
           </div>
@@ -182,15 +194,24 @@
             <div class="question">
               <img src="./images/question5.svg" alt="question5" />
               <div class="question_txt">
-                <p class="question_header">РЕЦЕПТЫ ЗДОРОВОГО ПИТАНИЯ</p>
-                <p>Принципы правильного питания</p>
+                <p class="question_header">Подбор нутрицевтиков (БАДов)</p>
+                <p> расшифровка анализов </p>
               </div>
             </div>
             <div class="question">
               <img src="./images/question6.svg" alt="question6" />
               <div class="question_txt">
-                <p class="question_header">ПИТАНИЕ ДЕТЕЙ</p>
-                <p>От прикорма до 18 лет</p>
+                <p class="question_header">«Женские» гормональные дисбалансы </p>
+                <p>СПКЯ, эндометриоз, ПМС, проблемы с циклом</p>
+              </div>
+            </div>
+            <div class="question">
+              <img src="./images/question1.svg" alt="question1" />
+              <div class="question_txt">
+                <p class="question_header">
+                  Неудовлетворенное состояние кожи
+                </p>
+                <p>волос и ногтей </p>
               </div>
             </div>
           </div>
@@ -205,42 +226,88 @@
       </div>
       <div class="block-seven">
         <div class="container">
-          <h3>Консультации</h3>
+          <h3>Индивидуальные консультации</h3>
           <div class="consultations">
             <div class="consultation">
-              <p class="consult-header">Разминка</p>
+              <p class="consult-header">Полная консультация</p>
               <p class="consult-info">
-                Сопровождение нутрициолога <br /><b>1 месяц (28 дней)</b>
+                - изучение анамнеза <br />
+                - разбор анализов с рекомендациями <br />
+                - рекомендации по питанию и образа жизни<br />
+                - подбор нутрицевтиков <br />
+                - конструктор полноценного рациона <br />
+                <b>2 встречи х 1,5 часа</b>
               </p>
               <p class="consult-old-price"></p>
-              <p class="consult-price"><b>10 500 р.</b></p>
+              <p class="consult-price"><b>150€</b></p>
               <button class="consult-register">Записаться</button>
             </div>
             <div class="consultation">
-              <p class="consult-header">Ближе к цели</p>
+              <p class="consult-header">2х месячный коучинг</p>
               <p class="consult-info">
-                Сопровождение нутрициолога <br /><b>2 месяца (56 дней)</b>
+                - изучение анамнеза <br />
+                - разбор анализов с рекомендациями <br />
+                - рекомендации по питанию и образа жизни<br />
+                - подбор нутрицевтиков <br />
+                - подбор протокола питания с рекомендациями<br /> 
+                - личное сопровождение в удобном формате<br /><b>2 месяца </b>
               </p>
-              <p class="consult-old-price">21 00 р.</p>
-              <p class="consult-price">18 000 р.</p>
+              <!-- <p class="consult-old-price">21 00 р.</p> -->
+              <p class="consult-price">350€</p>
               <button class="consult-register">Записаться</button>
             </div>
             <div class="consultation">
-              <p class="consult-header">Ближе к цели</p>
+              <p class="consult-header">Экспресс услуги</p>
               <p class="consult-info">
-                Сопровождение нутрициолога <br /><b>3 месяца (84 дней)</b>
+                1. Подбор нутрицевтиков под задачу <br />
+                2. Разбор анализов с рекомендациями <br />
+                3. Подбор протокола питания с рекомендациями<br />
+                4. Подбор протокола образа жизни <br />
+                <b></b>
               </p>
-              <p class="consult-old-price">31 500 р.</p>
-              <p class="consult-price">27 500 р.</p>
+              <p >услуга на выбор:</p>
+              <p class="consult-price">100€ </p>
               <button class="consult-register">Записаться</button>
             </div>
+            
+            
           </div>
         </div>
       </div>
+       <div class="block_one_consult container">
+        <div class="container1">
+          <div class="wrapper-block-one">
+            <h1 class="heading_consult">
+              <span>Оффлайн тренинги</span><br />для сотрудников компаний, салонов красоты, фитнесс центров и других
+            </h1>
+            <!-- <p class="p-1">
+              Персональное наставничество для специалистов в области здоровья.
+            </p> -->
+            
+              <ul class="p-2">
+                <li> Тренинг для бизнес-сообщества: 
+                  <span>"Как построить успешную карьеру без ущерба здоровью" </span><br /></li>
+                <li>Тренинг:
+                  <span> "Витамины и Минералы" </span><br /></li>
+                <li>Тренинг по тематике бьюти: 
+                  <span>"Лаборатория красоты" </span><br /></li>
+                <li>Тренинг по тематике фитнес: 
+                  <span>"Как поддержать красивую фигуру в любом возрасте и улучшить фитнес показатели?" </span><br /></li>
+                <li>Тренинг по детской нутрициологии: 
+                  <span>"Сбалансированное питание - ключ к здоровью ребенка" </span><br /></li>
+              </ul>
+            
+            <button class="consult-request">Заявка на консультацию</button>
+          </div>
+        </div>
+        <!-- <div class="img-consult"> -->
+          <img id='img-consult' src="./images/Lena Consult.png" alt="">
+        <!-- </div> -->
+      </div>
+
       <div class="block-eight">
         <p class="container">
-          Здоровый человек – счастливый человек, поэтому так важно следить за
-          своим здоровьем и питанием.
+          Ешьте еду как лекарство. В противном случае вы должны есть свое лекарство в качестве пищи.
         </p>
       </div>
       <div class="block-nine">
@@ -248,17 +315,54 @@
           <h3 class="block-nine-heading">ИНФО-ПРОДУКТЫ</h3>
           <div class="card-list">
             <div class="card card-1">
-              <img src="./images/card-1.png" alt="card 1" />
-              <h5>Расшифровка анализов</h5>
-              <a href="#">PDF-методичка</a>
-              <button>Купить</button>
+              <a href="#">
+                <img src="./images/card-1.png" alt="card 1" />
+              </a>
+              <div class="prodcard">
+                <h5>Трансформационная НутриИгра <br/>
+                    “Любовь = Здоровье“</h5>
+                <p>Интерактивная игра  <br/> 150€</p>
+                <a href="#">
+                  <button class="btn-more">Подробнее</button>
+                </a>
+              </div>
             </div>
             <div class="card card-2">
-              <img src="./images/card-2.png" alt="card 2" />
+              <a href="#">
+                <img src="./images/card-2.png" alt="card 2" />
+              </a>
+              <div class="prodcard">
+                <h5>Меню</h5>
+                <p>Готовое меню на неделю <br/> 50€</p>
+                <a href="#">
+                  <button class="btn-more">Подробнее</button>
+                </a>
+              </div>
             </div>
             <div class="card card-3">
-              <img src="./images/card-3.png" alt="card 3" />
+              <a href="#">
+                <img src="./images/card-3.png" alt="card 3" />
+              </a>
+              <div class="prodcard">
+                <h5>Тренинг "Код полноценного питания"</h5>
+                <p>8ми часовой оффлайн тренинг <br/> 50€/человек (минимум 8 чел.)</p>
+                <a href="#">
+                  <button class="btn-more">Подробнее</button>
+                </a>
+              </div>
+              
             </div>
+            <div class="card card-4">
+              <a href="#">
+                <img src="./images/card-3.png" alt="card 4" />
+              </a>
+              <div class="prodcard"><h5>T-Club</h5>
+                <p> Трансформационный клуб для женщин <br/> 25€/месяц</p>
+                
+                <a href="#">
+                  <button class="btn-more">Подробнее</button>
+                </a>
+              </div>
           </div>
         </div>
       </div>
@@ -303,11 +407,11 @@
               <a href="#"><button class="btn-more">ЕЩЁ</button></a>
             </div>
           </div>
-        </div>
+        <!-- </div>
         <a href="./articles.html"
           ><button class="btn-secondary">Спектр статей</button></a
         >
-      </div>
+      </div> -->
     </main>
     <footer>
       <div class="footer container">
@@ -315,25 +419,35 @@
         <div class="contacts">
           <p class="footer-item-header">Контакты</p>
           <ul class="footer-item-txt">
+            <!-- <li>
+              <a href="#">
+                <img src="./images/contacts1.svg" alt="contacts1" />
+                <p>Адрес</p>
+              </a>
+            </li> -->
             <li>
-              <img src="./images/contacts1.svg" alt="contacts1" />
-              <p>Адрес</p>
+              <a href="#">
+                <img src="./images/contacts2.svg" alt="contacts2" />
+                <p>Facebook</p>
+              </a>
             </li>
             <li>
-              <img src="./images/contacts2.svg" alt="contacts2" />
-              <p>Facebook</p>
+              <a href="#">
+                <img src="./images/contacts3.svg" alt="contacts3" />
+                <p>Instagram</p>
+              </a>
             </li>
             <li>
-              <img src="./images/contacts3.svg" alt="contacts3" />
-              <p>Instagram</p>
+              <a href="#">
+                <img src="./images/contacts4.svg" alt="contacts4" />
+                <p>Email</p>
+              </a>
             </li>
             <li>
-              <img src="./images/contacts4.svg" alt="contacts4" />
-              <p>Email</p>
-            </li>
-            <li>
-              <img src="./images/contacts5.svg" alt="contacts5" />
-              <p>Номер телефона</p>
+              <a href="#">
+                <img src="./images/contacts5.svg" alt="contacts5" />
+                <p>Номер телефона</p>
+              </a>
             </li>
           </ul>
         </div>
@@ -341,24 +455,32 @@
           <p class="footer-item-header">Навигация</p>
           <ul class="footer-item-txt">
             <li>
-              <p>Специалисты</p>
+              <a href="./aboutMe.html">
+                <p>О себе</p>
+              </a>
             </li>
             <li>
-              <p>Инфо-продукты</p>
+              <a href="./infoprod.html">
+                <p>Инфо-продукты</p>
+              </a>
             </li>
             <li>
-              <p>Консультации</p>
+              <a href="./consultations.html">
+                <p>Консультации</p>
+              </a>
             </li>
             <li>
-              <p>Статьи</p>
+              <a href="./articles.html">
+                <p>Статьи</p>
+              </a>
             </li>
           </ul>
         </div>
       </div>
       <hr />
       <div class="copyrights container">© 2023 by STERRASOFT</div>
-      <hr />
-      <div id="footer-bottom"></div>
+      <!-- <hr />
+      <div id="footer-bottom"></div> -->
     </footer>
   </body>
 </html>
