@@ -1,3 +1,9 @@
+/*
+1. Почистить код удалить комментарии +
+2. одинаковые стили вынести в новый файл global.css
+3. На всех страницах проверить наличие тегов h1,h2,h3 и пофиксить
+*/
+
 * {
   padding: 0;
   margin: 0;
@@ -16,23 +22,16 @@
   font-family: unset;
 }
 :root {
-  /* --color-main: #186c31; */
-  /* --color-main: #005546; */
   --color-main: #435147;
   --color-main-bright: #6f8776;
   --gradient-header: linear-gradient(0deg, #606f68, #435147);
   --gradient-footer: linear-gradient(180deg, #606f68, #435147);
-  /* --gradient-radial: radial-gradient(#77817d, #435147); */
-  /* --color-main-dark: #125125; */
-  /* --color-secondary: #819a95; */
   --color-secondary: #d2d2d242;
   --btn-bg: #d4d2d0;
   --shadow: rgba(0, 0, 0, 0.25);
 }
 
 header {
-  /* max-height: 64px; */
-  /* max-width: 100%; */
   position: sticky;
   top: 0;
   background: var(--gradient-header);
@@ -53,9 +52,9 @@ h2 {
   padding: 0 20px;
   margin: 0 auto;
   width: 100%;
-  /* margin: 80px 0; */
 }
-h3 {
+h3,
+.container h2 {
   text-transform: uppercase;
 
   font-style: normal;
@@ -86,7 +85,6 @@ h6 {
 }
 
 .header {
-  /* height: 64px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -155,7 +153,6 @@ nav {
 #burger {
   border: none;
   background: none;
-  /* display: flex; */
   display: none;
   justify-content: center;
   height: 100%;
@@ -177,15 +174,18 @@ nav {
   background-image: url(./images/block_one_bg2.png);
 }
 
-.block_one > strong {
+.block_one strong {
   display: flex;
   gap: 20px;
-
+  text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 56px;
   line-height: 71px;
   color: white;
+}
+.block_one > strong span {
+  font-size: 42px;
 }
 
 .line {
@@ -227,7 +227,6 @@ nav {
   color: rgb(131, 131, 131);
 }
 .what_we_do {
-  /* max-width: 100%; */
   width: max-content;
   margin-top: 40px;
   display: grid;
@@ -236,33 +235,14 @@ nav {
   gap: 30px 20px;
 }
 .we_do_block {
-  /* max-width: 450px; */
-  /* height: max-content; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 5px; */
-  /* border-radius: 15px; */
   overflow: hidden;
 }
-/* .we_do_block > button {
-  border-radius: 50px;
-  background: var(--btn-bg);
-  border: none;
-  padding: 15px 25px;
-
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  color: var(--color-main);
-} */
 .we_do_img {
-  /* width: 100%; */
   position: relative;
   pointer-events: none;
-
-  /* overflow: hidden; */
 }
 .we_do_img > img {
   width: 100%;
@@ -274,7 +254,6 @@ nav {
 .we_do_block:hover p {
   opacity: 100%;
   width: 100%;
-  /* max-width: 100%; */
 }
 .we_do_block:hover .right {
   padding-left: 15%;
@@ -289,7 +268,6 @@ nav {
   bottom: 20%;
   color: white;
   position: absolute;
-  /* background: var(--color-main-transparent); */
   background: var(--color-main);
 
   font-style: normal;
@@ -365,7 +343,6 @@ nav {
   flex-direction: column;
 }
 .questions {
-  /* margin-top: 50px; */
   padding: 50px 30px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -398,7 +375,6 @@ nav {
 #questions_first {
   border-bottom: 2px solid var(--btn-bg);
 }
-/* ///////////////////////////////////////// */
 .block-six {
   padding: 50px 0;
   background-image: url(./images/block_six_bg.png);
@@ -413,7 +389,7 @@ nav {
   line-height: 50px;
   color: white;
 }
-/* ///////////////////////////////////////// */
+
 .block-seven {
   padding: 40px 0 80px 0;
   background: var(--color-main);
@@ -422,14 +398,9 @@ nav {
 .block_one_consult {
   height: 100%;
   width: 100%;
-  /* height: 650px; */
-  /* display: flex; */
-  /* flex-direction: row !important; */
-  /* justify-content: center; */
   gap: 100px !important;
   display: grid !important;
   grid-template-columns: repeat(2, 1fr);
-  /* align-items: center; */
   font-weight: 700;
   font-size: 26px;
   padding-top: 0px !important;
@@ -468,7 +439,7 @@ nav {
   font-size: 60px;
   text-transform: uppercase;
 }
-h1,
+.h1_h2,
 .consult-request {
   align-self: flex-start;
 }
@@ -530,17 +501,11 @@ h1,
   line-height: 25px;
 }
 .img-consult {
-  /* background-image: url(./images/lena.jpg);
-  height: 100%; */
   width: 100%;
-  /* background-position: center; */
-  /* height: 100%; */
   position: relative;
 }
 #img-consult {
-  /* height: 100%; */
   width: 100%;
-  /* height: 100%; */
 }
 .block-eight {
   padding: 50px 0;
@@ -603,7 +568,6 @@ h1,
   font-size: 18px;
   line-height: 25px;
   color: var(--color-main);
-  /* margin-bottom: 15%; */
 }
 .consult-price {
   font-style: normal;
@@ -695,7 +659,6 @@ h1,
   overflow: hidden;
 }
 .article img {
-  /* flex-grow: 1; */
   width: 50%;
 }
 .block-ten > a > button {
@@ -703,7 +666,6 @@ h1,
   box-shadow: 0px 0px 10px var(--shadow);
 }
 .article-info {
-  /* flex-grow: 1; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -759,10 +721,8 @@ footer {
   display: grid;
   gap: 220px;
   grid-template-columns: repeat(3, 1fr);
-  /* padding: 50px 0; */
   padding-top: 20px;
   padding-bottom: 20px;
-  /* align-items: start; */
   align-items: start;
 }
 .footer > img {
@@ -773,13 +733,10 @@ footer {
 }
 .footer-item-header {
   pointer-events: none;
-
-  /* padding: 10px 0; */
   border-bottom: 1px solid white;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  /* line-height: 40px; */
   color: white;
 }
 .footer-item-txt {

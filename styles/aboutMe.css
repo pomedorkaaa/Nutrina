@@ -47,7 +47,6 @@ main {
 }
 main img {
   width: 100%;
-  /* height: 800px; */
 }
 main > .container {
   padding-top: 30px;
