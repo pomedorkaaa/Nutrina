@@ -1,0 +1,17 @@
+p {
+  text-indent: 20px;
+  line-height: 1.4rem;
+}
+h5 {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.articl {
+  padding: 100px 20px 0 20px;
+  border-top: 1px solid lightgray;
+}
+h3 {
+  font-size: 40px;
+}
