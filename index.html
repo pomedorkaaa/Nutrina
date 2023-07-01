@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="./styles/infoprod.css" />
     <link rel="stylesheet" href="./style.css" />
     <title>Нутрициология</title>
+    <script src="./modal.js" defer></script>
     <script src="./script.js" defer></script>
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,20 +40,6 @@
             <li><a href="./articles.html" target="_parent"> Статьи</a></li>
             <li><a href="./consultations.html"> Консультации</a></li>
           </ul>
-          <!-- <div class="social">
-            <button>
-              <a href=""><img src="./images/social_1.svg" alt="" /></a>
-            </button>
-            <button>
-              <a href=""><img src="./images/social_2.svg" alt="" /></a>
-            </button>
-            <button>
-              <a href=""><img src="./images/social_3.svg" alt="" /></a>
-            </button>
-            <button>
-              <a href=""><img src="./images/social_4.svg" alt="" /></a>
-            </button>
-          </div> -->
         </nav>
         <button id="burger">
           <img src="./images/burger_menu.svg" alt="burger" />
@@ -61,7 +48,7 @@
     </header>
     <main>
       <div class="block_one">
-        <strong class="container">
+        <h1><strong class="container">
            <!-- Онлайн-консультации по питанию и улучшению состояния здоровья -->
            ЧУМАКОВА ЕЛЕНА
 дипломированный нутрициолог и коуч по питанию и здровому образу жизни
@@ -69,48 +56,87 @@
 КОУЧ ПО ПИТАНИЮ И ЗДОРОВОМУ ОБРАЗУ ЖИЗНИ -->
 
           <div class="line"></div>
-        </strong>
+        </strong></h1>
         <a href="./consult-form.html"
           ><button class="btn-secondary">Заявка на консультацию</button></a
         >
       </div>
       <div class="block_two">
         <div class="container">
-          <h3>ЧТО МЫ ДЕЛАЕМ</h3>
+          <h2>ЧТО МЫ ДЕЛАЕМ</h2>
           <p>Области, в которых мы специализируемся</p>
           <div class="what_we_do container">
-            <div class="we_do_block">
-              <div class="we_do_img">
+          
+            <div class="we_do_block" id="open_modal" >
+              <div class="we_do_img" >
                 <img src="./images/what_we_do1.png" alt="doing" />
-                <p class="left">Гигиена питания</p>
-              </div>
-              <!-- <button>Читать больше</button> -->
+                <p class="left" >Гигиена питания</p>
+              </div>   
             </div>
-            <div class="we_do_block">
+
+             <div class="modal" id="my_modal">
+                <div class="modal_box">
+                  <div id="closeModal"></div>
+                  
+                  <h4>Гигиена питания</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam totam obcaecati, molestias mollitia veniam facere modi esse expedita vero, nemo dicta id alias! Aperiam consequuntur quod aspernatur suscipit nostrum perspiciatis!</p>
+                </div>
+              </div>
+
+
+              <div class="we_do_block" id="open_modal2">
               <div class="we_do_img">
                 <img src="./images/what_we_do2.png" alt="doing2" />
                 <p class="right">
                   Разработка рекомендаций по правильному питанию
                 </p>
               </div>
-              <!-- <button>Читать больше</button> -->
-            </div>
-            <div class="we_do_block">
+              </div>
+              <div class="modal2" id="my_modal2">
+                <div class="modal_box2">
+                  <div id="closeModal"></div>
+                  
+                  <h4>Разработка рекомендаций по правильному питанию</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam totam obcaecati, molestias mollitia veniam facere modi esse expedita vero, nemo dicta id alias! Aperiam consequuntur quod aspernatur suscipit nostrum perspiciatis!</p>
+                </div>
+              </div>
+
+         
+            <div class="we_do_block" id="open_modal3">
               <div class="we_do_img">
                 <img src="./images/what_we_do3.png" alt="doing3" />
                 <p class="left">
                   Исследование связи между пищевыми привычками и психикой
                 </p>
               </div>
-              <!-- <button>Читать больше</button> -->
-            </div>
-            <div class="we_do_block">
+              </div>
+
+              <div class="modal3" id="my_modal3">
+                <div class="modal_box3">
+                  <div id="closeModal"></div>
+                  
+                  <h4>Исследование связи между пищевыми привычками и психикой</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam totam obcaecati, molestias mollitia veniam facere modi esse expedita vero, nemo dicta id alias! Aperiam consequuntur quod aspernatur suscipit nostrum perspiciatis!</p>
+                </div>
+              </div>
+
+            
+            <div class="we_do_block" id="open_modal4">
               <div class="we_do_img">
                 <img src="./images/what_we_do4.png" alt="doing4" />
                 <p class="right">Воздействие продуктов на организм</p>
               </div>
-              <!-- <button>Читать больше</button> -->
             </div>
+              <div class="modal4" id="my_modal4">
+                <div class="modal_box4">
+                  <div id="closeModal"></div>
+                  
+                  <h4>Воздействие продуктов на организм</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam totam obcaecati, molestias mollitia veniam facere modi esse expedita vero, nemo dicta id alias! Aperiam consequuntur quod aspernatur suscipit nostrum perspiciatis!</p>
+                </div>
+              </div>
+              
+            
           </div>
         </div>
       </div>
@@ -122,33 +148,10 @@
           </p>
         </div>
       </div>
-      <!-- <div class="block_four">
-        <div class="achievements container">
-          <div class="achievement">
-            <h4>139</h4>
-            <p>довольных клиентов</p>
-          </div>
-          <div class="achievement">
-            <h4>11</h4>
-            <p>специалистов</p>
-          </div>
-          <div class="achievement">
-            <h4>98</h4>
-            <p>консультаций</p>
-          </div>
-          <div class="achievement">
-            <h4>17</h4>
-            <p>инфо-продуктов</p>
-          </div>
-          <div class="achievement">
-            <h4>24</h4>
-            <p>маленьких пациентов</p>
-          </div>
-        </div>
-      </div> -->
+      
       <div class="block_five">
         <div class="container">
-          <h3>С какими вопросами</h3>
+          <h2>С какими вопросами</h2>
           <p>я помогу вам разобраться</p>
           <div class="questions" id="questions_first">
             <div class="question">
@@ -238,7 +241,7 @@
                 - конструктор полноценного рациона <br />
                 <b>2 встречи х 1,5 часа</b>
               </p>
-              <p class="consult-old-price"></p>
+              
               <p class="consult-price"><b>150€</b></p>
               <button class="consult-register">Записаться</button>
             </div>
@@ -252,7 +255,7 @@
                 - подбор протокола питания с рекомендациями<br /> 
                 - личное сопровождение в удобном формате<br /><b>2 месяца </b>
               </p>
-              <!-- <p class="consult-old-price">21 00 р.</p> -->
+              
               <p class="consult-price">350€</p>
               <button class="consult-register">Записаться</button>
             </div>
@@ -277,12 +280,10 @@
        <div class="block_one_consult container">
         <div class="container1">
           <div class="wrapper-block-one">
-            <h1 class="heading_consult">
+            <p class="heading_consult">
               <span>Оффлайн тренинги</span><br />для сотрудников компаний, салонов красоты, фитнесс центров и других
-            </h1>
-            <!-- <p class="p-1">
-              Персональное наставничество для специалистов в области здоровья.
-            </p> -->
+            </p>
+            
             
               <ul class="p-2">
                 <li> Тренинг для бизнес-сообщества: 
@@ -300,9 +301,9 @@
             <button class="consult-request">Заявка на консультацию</button>
           </div>
         </div>
-        <!-- <div class="img-consult"> -->
+        
           <img id='img-consult' src="./images/Lena Consult.png" alt="">
-        <!-- </div> -->
+        
       </div>
 
       <div class="block-eight">
@@ -316,7 +317,7 @@
           <div class="card-list">
             <div class="card card-1">
               <a href="#">
-                <img src="./images/card-1.png" alt="card 1" />
+                <img src="./images/нутриигра.jpg" alt="card 1" />
               </a>
               <div class="prodcard">
                 <h5>Трансформационная НутриИгра <br/>
@@ -329,7 +330,7 @@
             </div>
             <div class="card card-2">
               <a href="#">
-                <img src="./images/card-2.png" alt="card 2" />
+                <img src="./images/dinner-set-with-dolma-soups-salads-chicken-with-rice-french-fries.jpg" alt="card 2" />
               </a>
               <div class="prodcard">
                 <h5>Меню</h5>
@@ -341,7 +342,7 @@
             </div>
             <div class="card card-3">
               <a href="#">
-                <img src="./images/card-3.png" alt="card 3" />
+                <img src="./images/delicious-green-smoothie-with-apple-broccoli.jpg" alt="card 3" />
               </a>
               <div class="prodcard">
                 <h5>Тренинг "Код полноценного питания"</h5>
@@ -354,7 +355,7 @@
             </div>
             <div class="card card-4">
               <a href="#">
-                <img src="./images/card-3.png" alt="card 4" />
+                <img src="./images/people-picnic.jpg" alt="card 4" />
               </a>
               <div class="prodcard"><h5>T-Club</h5>
                 <p> Трансформационный клуб для женщин <br/> 25€/месяц</p>
@@ -376,7 +377,7 @@
               <p class="article-txt">
                 Здоровая еда - это продукты с низким содержанием жира
               </p>
-              <a href="#"><button class="btn-more">ЕЩЁ</button></a>
+              <a href="./artic2.html#art1"><button class="btn-more">Читать</button></a>
             </div>
           </div>
           <div class="article">
@@ -384,7 +385,7 @@
             <div class="article-info">
               <p class="article-header">20 продуктов, регулирующих аппетит</p>
               <p class="article-txt">От каких продуктов следует отказаться</p>
-              <a href="#"><button class="btn-more">ЕЩЁ</button></a>
+              <a href="./artic2.html#art2"><button class="btn-more">Читать</button></a>
             </div>
           </div>
           <div class="article">
@@ -394,7 +395,7 @@
               <p class="article-txt">
                 Какие структуры отвечают за упругость кожи тела?
               </p>
-              <a href="#"><button class="btn-more">ЕЩЁ</button></a>
+              <a href="./artic2.html#art3"><button class="btn-more">Читать</button></a>
             </div>
           </div>
           <div class="article">
@@ -404,14 +405,10 @@
                 7 действенных практик для поддержания иммунитета
               </p>
               <p class="article-txt">Крепкий иммунитет - залог здоровья</p>
-              <a href="#"><button class="btn-more">ЕЩЁ</button></a>
+              <a href="./artic2.html#art4"><button class="btn-more">Читать</button></a>
             </div>
           </div>
-        <!-- </div>
-        <a href="./articles.html"
-          ><button class="btn-secondary">Спектр статей</button></a
-        >
-      </div> -->
+        
     </main>
     <footer>
       <div class="footer container">
@@ -419,12 +416,7 @@
         <div class="contacts">
           <p class="footer-item-header">Контакты</p>
           <ul class="footer-item-txt">
-            <!-- <li>
-              <a href="#">
-                <img src="./images/contacts1.svg" alt="contacts1" />
-                <p>Адрес</p>
-              </a>
-            </li> -->
+            
             <li>
               <a href="#">
                 <img src="./images/contacts2.svg" alt="contacts2" />
@@ -479,8 +471,7 @@
       </div>
       <hr />
       <div class="copyrights container">© 2023 by STERRASOFT</div>
-      <!-- <hr />
-      <div id="footer-bottom"></div> -->
+      
     </footer>
   </body>
 </html>

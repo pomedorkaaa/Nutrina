@@ -1,13 +1,8 @@
 :root {
-  /* --color-main: #186c31; */
-  /* --color-main: #005546; */
   --color-main: #435147;
   --color-main-bright: #6f8776;
   --gradient-header: linear-gradient(0deg, #606f68, #435147);
   --gradient-footer: linear-gradient(180deg, #606f68, #435147);
-  /* --gradient-radial: radial-gradient(#77817d, #435147); */
-  /* --color-main-dark: #125125; */
-  /* --color-secondary: #819a95; */
   --color-secondary: #d2d2d242;
   --btn-bg: #d4d2d0;
   --shadow: rgba(0, 0, 0, 0.25);
@@ -67,7 +62,6 @@ input::placeholder {
 }
 
 .decoration {
-  /* background: url(../images/form-deco-bg.png); */
   height: 100%;
   position: relative;
   display: flex;

@@ -1,0 +1,17 @@
+:root {
+  --color-main: #435147;
+  --color-main-bright: #6f8776;
+  --gradient-header: linear-gradient(0deg, #606f68, #435147);
+  --gradient-footer: linear-gradient(180deg, #606f68, #435147);
+  --color-secondary: #d2d2d242;
+  --btn-bg: #d4d2d0;
+  --shadow: rgba(0, 0, 0, 0.25);
+  --form-bg: rgba(88, 112, 99, 0.4);
+}
+main > .container {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+}
